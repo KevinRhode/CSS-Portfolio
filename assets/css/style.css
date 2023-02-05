@@ -1,5 +1,6 @@
 :root{
-    --main-bg-color:#9e0505;
+    --main-bg-color:#2fb2d3;
+    --work-project-hover: #24ccf7;
     --main-header-bg-color: #000;
     --main-bg-acent-color:#fff;
 }
@@ -11,7 +12,9 @@ body{
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
-    min-width: 410px;
+    min-width: 355px;
+    border:var(--main-header-bg-color) solid 2px;
+    border-radius: 8px;
 }
 header{
     background-color: var(--main-header-bg-color);
@@ -53,9 +56,10 @@ header{
 }
 .nav-parent nav ul{   
 /* text-align: center; */
-background-color: var(--main-bg-acent-color);
+background-color: var(--main-header-bg-color);
 padding: 0;
 width: 75%;
+justify-content: end;
 margin: auto;
 display: flex;
     
@@ -65,10 +69,13 @@ display: flex;
     /* float: left; */
     width: 40%;
     padding: 5px 5px; 
+    
+    border-radius: 15px;
+    margin: 5px 12px;
     text-align: center;  
     font-weight: bolder;     
     color: var(--main-bg-acent-color);
-    background-color: var(--main-header-bg-color);
+    background-color: var(--main-bg-acent-color);
     text-shadow: 0 0 3px var(--main-bg-color);
 }
 main{
@@ -111,7 +118,7 @@ main{
 }
 .about-me-text{
     width: 75%;    
-    background-color: #9e0505;
+    background-color: var(--main-bg-color);
 }
 .about-me-text p {
     margin-left: 5px;
@@ -153,18 +160,23 @@ main{
     /* border: #9e0505 solid 1px; */
 }
 .top-project-container .project {    
-    background-color: #a54040;  
+    background-color: var(--main-bg-color);  
     margin: auto;  
     height: 90%;
-    width: 90%   
+    width: 90%   ;
+    position: relative;
+    /* max-width: 80 0px; */
 
 }
 .bottom-project-container .project{
-    background-color: #a54040;
+    background-color: var(--main-bg-color);
     height: 40%;
     width: 40%;
     margin: auto;
+    justify-content: center;
     position: relative;
+
+    /* max-width: 425px; */
 }
 .bottom-project-container .project p {
     position: absolute;
@@ -172,8 +184,30 @@ main{
     right: 20px;
     
 }
+.top-project-container .project pre {
+    position: absolute;
+    bottom: -10px;
+    left: -6px;
+    background-color: #000;
+    color: #fff;
+    
+}
+.bottom-project-container .project pre {
+    position: absolute;
+    bottom: -10px;
+    left: -6px;
+    background-color: #000;
+    color: #fff;
+    
+}
+.bottom-project-container .project pre span {
+    text-align: start;
+}
 .project:hover {
-    background-color: #9e0505;
+    background-color: var(--work-project-hover);
+}
+.project{
+    border: #000 3px solid;
 }
 footer{
     display: flex;
@@ -184,12 +218,27 @@ footer{
     border-top-left-radius: 0%;
 }
 .footer-heading{
-
+    position: relative;
     text-align: end;
     color: var(--main-bg-acent-color);
     width: 25%;
+    height: 100%;
     padding-right: 15px;
-    border-right: #000 solid 2px;
+    /* border-right: #000 solid 2px; */
+}
+/* contact me styleing for h2 */
+.footer-heading h2 {
+    /* color: var(--main-bg-acent-color); */
+    /* text-align: end; */
+    top: -7px;
+    left: -6px;
+    width: 100%;
+    position: absolute;
+    padding: 2px 6px 2px 8px;
+    background-color: var(--main-bg-color);
+    /* margin: 21px -8px; */
+    border-radius: 5px;
+    border: #000 solid 2px;
 }
 .footer-nav-parent{
     /* margin-left: 50px; */
@@ -203,35 +252,51 @@ footer ul{
 }
 footer ul li {
     list-style-type: none;
+    min-height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: var(--main-header-bg-color) solid 2px;
     /* padding: 10px 10px; */
+    border-radius: 25px;
     font-weight: bolder;
     font-size: 18px;
-    margin:auto;    
-    background-color: aqua;
-    height: 100%;
+    margin: 2px auto;    
+    width: 28%;
+    background-color: var(--main-bg-acent-color);
+    height: 100%;    
+    text-align: center;
+
 }
+
+#email{
+    font-size: 14px;
+}
+
+
 
 @media (max-width: 454px) {
     /* .fullname h1{
         color: #000;
     } */
-    .footer-nav-parent nav ul {
-        display: flex;
-        flex-direction: column;
-    }
+   
     /* .nav-parent nav {
         
     } */
     
     .nav-parent nav ul{
         
-        flex-direction: column;
+        /* flex-direction: column; */
+        justify-content: end;
+        
+        width: 80%;
 
     }
+   
 
 
 }
-@media (max-width: 740px){
+@media (max-width: 880px){
     .top-nav ul {
         
         flex-wrap: wrap;
@@ -240,4 +305,37 @@ footer ul li {
         width: 50%;
         margin: auto;
     }
+    
+}
+@media (max-width:870px) {
+    
+    .footer-nav-parent address ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-me ul li p{
+        margin: auto;        
+    }
+    .contact-me ul li a{
+        margin: auto;
+    }
+    .footer-nav-parent address ul li {
+        min-width: 220px;
+        width: 80%;
+        min-height: 57px;
+        border: #000 solid 2px;  
+        border-radius: 25px;
+        /* margin: auto; */
+        display: flex;
+        /* flex-wrap: wrap; */
+        /* vertical align for contact me info */
+
+        align-items: center;
+        justify-content: space-around;
+        /* flex-basis: 0; */
+    }
+
+    
+    
+
 }
