@@ -105,6 +105,7 @@ main{
     right: 10px;
     
 }
+/* about me styling */
 .about-me{
     background-color: var(--main-bg-acent-color);
     display: flex;
@@ -128,6 +129,7 @@ main{
     font-weight: bolder;
     font-size:14px;
 }
+/* work styling */
 .work{
     background-color: var(--main-bg-acent-color);
     width: 100%;
@@ -147,11 +149,13 @@ main{
     width: 75%;
     /* background-color: #988900; */
 }
+/* layout for projects */
 .top-project-container {
     height: 50%;
     /* background-color: #1cf300; */
     display: flex;
 }
+/* layout for projects */
 .bottom-project-container {
     /* background-color: #00f3f3;     */
     /* width: auto; */
@@ -160,6 +164,7 @@ main{
     flex-wrap: wrap;
     /* border: #9e0505 solid 1px; */
 }
+/* project card */
 .top-project-container .project {    
     /* background-color: var(--main-bg-color);   */
     margin: auto;  
@@ -171,6 +176,7 @@ main{
     /* opacity: 0.5; */
     background-position: 93px -101px;
 }
+/* bg image of top project */
 .top-project-container .project .project-backgroup{    
     /* background-color: var(--main-bg-color);   */
     margin: auto;  
@@ -178,12 +184,11 @@ main{
     width: 100%   ;
     position: relative;
     /* max-width: 80 0px; */
-    background-image: url("../images/kevinrhode.github.io_mod-2-miniproject.png");
+    background-image: url("../images/kevinrhode.github.io_mod-2-miniproject_ (1).png");
     opacity: 0.5;
-    background-position: 93px -101px;
+    background-position: -318px -80px;
 }
-
-
+/* formating for the 4 projects below */
 .bottom-project-container .project{
     background-color: var(--main-bg-color);
     height: 40%;
@@ -194,12 +199,14 @@ main{
 
     /* max-width: 425px; */
 }
+/* label styling for the project */
 .bottom-project-container .project p {
     position: absolute;
     bottom: 0;
     right: 20px;
     
 }
+/* label styling for the project */
 .top-project-container .project pre {
     position: absolute;
     bottom: -10px;
@@ -219,6 +226,7 @@ main{
     color:#fff;
     font-size: 12px;    
 }
+/* label styling for the project */
 .bottom-project-container .project pre {
     position: absolute;
     bottom: -10px;
@@ -227,12 +235,13 @@ main{
     color: #fff;
     
 }
+/* label styling for the project */
 .bottom-project-container .project pre span {
     text-align: start;
 }
-
-.project:hover {
-    background-color: var(--work-project-hover);
+/* hover effect for the projects */
+.project:hover .project-backgroup{
+    /* background-color: var(--work-project-hover); */
     opacity: 0.8;
 }
 .project{
@@ -246,6 +255,7 @@ footer{
     border-top-right-radius: 0%;
     border-top-left-radius: 0%;
 }
+/* contact me div */
 .footer-heading{
     position: relative;
     text-align: end;
@@ -273,6 +283,7 @@ footer{
     /* margin-left: 50px; */
     width: 75%;
 }
+/* background color */
 footer ul{
     display: flex;    
     padding: 0;    
@@ -297,13 +308,13 @@ footer ul li {
     text-align: center;
 
 }
-
+/* change font size of email at bottom */
 #email{
     font-size: 14px;
 }
 
 
-
+/* small screen header content just-end */
 @media (max-width: 454px) {
     /* .fullname h1{
         color: #000;
@@ -325,6 +336,7 @@ footer ul li {
 
 
 }
+/* to allow for the square */
 @media (max-width: 880px){
     .top-nav ul {
         
@@ -336,6 +348,8 @@ footer ul li {
     }
     
 }
+/* keeps the email address from looking awkward */
+/* styling of the bottom area */
 @media (max-width:870px) {
     
     .footer-nav-parent address ul {
