@@ -25,6 +25,11 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ![imageofthecompletedwork](./assets/images/module-2-chall.jpg)
 
+#What you should see
+
+![imageoftheloadedcite](./assets/images/127.0.0.1_5500_index.html.png)
+
+
 ## Credits
 
 https://www.vectorstock.com/royalty-free-vector/tarot-deck-card-set-the-sun-vector-43947426

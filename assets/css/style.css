@@ -16,6 +16,7 @@ body{
     border:var(--main-header-bg-color) solid 2px;
     border-radius: 8px;
 }
+
 header{
     background-color: var(--main-header-bg-color);
     width: 100%;
@@ -24,7 +25,7 @@ header{
     border: #000 solid 2px;
     display: flex;
 }
-/* wireframe - fullname */
+/* fullname */
 .fullname{
     /* background-color: #429e05; */
     border-bottom-left-radius: 0%;
@@ -189,8 +190,18 @@ main{
     bottom: -10px;
     left: -6px;
     background-color: #000;
-    color: #fff;
+    color: #ffffff;
     
+}
+/* to change text on porjects thumbnail top */
+.top-project-container .project pre .project-subtext{
+    color:#fff;
+    font-size: 12px;    
+}
+/* to change text on porjects thumbnail bottom */
+.bottom-project-container .project pre .project-subtext{
+    color:#fff;
+    font-size: 12px;    
 }
 .bottom-project-container .project pre {
     position: absolute;
@@ -203,6 +214,7 @@ main{
 .bottom-project-container .project pre span {
     text-align: start;
 }
+
 .project:hover {
     background-color: var(--work-project-hover);
 }
