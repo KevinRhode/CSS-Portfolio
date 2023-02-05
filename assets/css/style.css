@@ -1,0 +1,243 @@
+:root{
+    --main-bg-color:#9e0505;
+    --main-header-bg-color: #000;
+    --main-bg-acent-color:#fff;
+}
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+/* styling */
+body{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    min-width: 410px;
+}
+header{
+    background-color: var(--main-header-bg-color);
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: #000 solid 2px;
+    display: flex;
+}
+/* wireframe - fullname */
+.fullname{
+    /* background-color: #429e05; */
+    border-bottom-left-radius: 0%;
+    width: 25%;
+}
+/* fullname alignment and styling*/
+.fullname h1{
+    color: var(--main-bg-acent-color);
+    text-align: end;
+    padding: 0 5px 0 0;
+    background-color: var(--main-bg-color);
+    margin: 21px -8px;
+    border-radius: 5px;
+}
+.nav-parent{
+    /* background-color: aqua;     */
+    width: 75%;
+}
+.nav-parent ul {
+    list-style-type: none;
+   
+}
+/* == class top-nav */
+.nav-parent nav{
+    display: flex;
+    justify-content: end;  
+    margin: auto;     
+    height: 100%; 
+}
+.nav-parent nav ul{   
+/* text-align: center; */
+background-color: var(--main-bg-acent-color);
+padding: 0;
+width: 75%;
+margin: auto;
+display: flex;
+    
+}
+.nav-parent nav ul li {
+    /* justify-content: center; */
+    /* float: left; */
+    width: 40%;
+    padding: 5px 5px; 
+    text-align: center;  
+    font-weight: bolder;     
+    color: var(--main-bg-acent-color);
+    background-color: var(--main-header-bg-color);
+    text-shadow: 0 0 3px var(--main-bg-color);
+}
+main{
+    /* border: #e5ff00 solid 5px; */
+    width: 100%;
+    display: flex;
+    height: 50%;
+    flex-wrap: wrap;    
+}
+.banner{
+    background-color: #9e0505;
+    width: 100%;
+    height: 120px;     
+    background-image: url(../images/44179666.jpg);
+    background-position: 0 -166px;
+    position: relative;
+}
+/* ask about proper bottom righ alignment for responvise/non div soup */
+/* i think i got it */
+.banner h3{
+    color: #fff;
+    font-weight: bolder;
+    text-decoration: underline;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    
+}
+.about-me{
+    background-color: var(--main-bg-acent-color);
+    display: flex;
+    width: 100%;
+}
+.about-me-heading{
+    /* background-color: aqua; */
+    text-align: end;
+    padding-right: 15px;
+    width: 25%;
+    border-right: #000 solid 2px;
+}
+.about-me-text{
+    width: 75%;    
+    background-color: #9e0505;
+}
+.about-me-text p {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #fff;
+    font-weight: bolder;
+    font-size:14px;
+}
+.work{
+    background-color: var(--main-bg-acent-color);
+    width: 100%;
+    /* default 500px */
+    height: 500px;
+    display: flex;
+}
+.work-heading{
+
+    width: 25%;
+    text-align: end;
+    padding-right: 15px;
+    border-right: #000 solid 2px;
+}
+.work-projects{
+    /* background-color: #9e0505;     */
+    width: 75%;
+    /* background-color: #988900; */
+}
+.top-project-container {
+    height: 50%;
+    /* background-color: #1cf300; */
+    display: flex;
+}
+.bottom-project-container {
+    /* background-color: #00f3f3;     */
+    /* width: auto; */
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: #9e0505 solid 1px; */
+}
+.top-project-container .project {    
+    background-color: #a54040;  
+    margin: auto;  
+    height: 90%;
+    width: 90%   
+
+}
+.bottom-project-container .project{
+    background-color: #a54040;
+    height: 40%;
+    width: 40%;
+    margin: auto;
+    position: relative;
+}
+.bottom-project-container .project p {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    
+}
+.project:hover {
+    background-color: #9e0505;
+}
+footer{
+    display: flex;
+    background-color: var(--main-bg-color);
+    width: 100%;
+    border-radius: 5px;
+    border-top-right-radius: 0%;
+    border-top-left-radius: 0%;
+}
+.footer-heading{
+
+    text-align: end;
+    color: var(--main-bg-acent-color);
+    width: 25%;
+    padding-right: 15px;
+    border-right: #000 solid 2px;
+}
+.footer-nav-parent{
+    /* margin-left: 50px; */
+    width: 75%;
+}
+footer ul{
+    display: flex;    
+    padding: 0;    
+    background-color: var(--main-bg-color);
+    
+}
+footer ul li {
+    list-style-type: none;
+    /* padding: 10px 10px; */
+    font-weight: bolder;
+    font-size: 18px;
+    margin:auto;    
+    background-color: aqua;
+    height: 100%;
+}
+
+@media (max-width: 454px) {
+    /* .fullname h1{
+        color: #000;
+    } */
+    .footer-nav-parent nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    /* .nav-parent nav {
+        
+    } */
+    
+    .nav-parent nav ul{
+        
+        flex-direction: column;
+
+    }
+
+
+}
+@media (max-width: 740px){
+    .top-nav ul {
+        
+        flex-wrap: wrap;
+    }
+    .top-nav ul li {
+        width: 50%;
+        margin: auto;
+    }
+}
