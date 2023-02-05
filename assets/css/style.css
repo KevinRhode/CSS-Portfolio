@@ -161,14 +161,29 @@ main{
     /* border: #9e0505 solid 1px; */
 }
 .top-project-container .project {    
-    background-color: var(--main-bg-color);  
+    /* background-color: var(--main-bg-color);   */
     margin: auto;  
     height: 90%;
     width: 90%   ;
     position: relative;
     /* max-width: 80 0px; */
-
+    /* background-image: url("../images/kevinrhode.github.io_mod-2-miniproject.png"); */
+    /* opacity: 0.5; */
+    background-position: 93px -101px;
 }
+.top-project-container .project .project-backgroup{    
+    /* background-color: var(--main-bg-color);   */
+    margin: auto;  
+    height: 100%;
+    width: 100%   ;
+    position: relative;
+    /* max-width: 80 0px; */
+    background-image: url("../images/kevinrhode.github.io_mod-2-miniproject.png");
+    opacity: 0.5;
+    background-position: 93px -101px;
+}
+
+
 .bottom-project-container .project{
     background-color: var(--main-bg-color);
     height: 40%;
@@ -196,7 +211,8 @@ main{
 /* to change text on porjects thumbnail top */
 .top-project-container .project pre .project-subtext{
     color:#fff;
-    font-size: 12px;    
+    font-size: 12px;
+      
 }
 /* to change text on porjects thumbnail bottom */
 .bottom-project-container .project pre .project-subtext{
@@ -217,6 +233,7 @@ main{
 
 .project:hover {
     background-color: var(--work-project-hover);
+    opacity: 0.8;
 }
 .project{
     border: #000 3px solid;
