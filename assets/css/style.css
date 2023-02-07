@@ -138,7 +138,7 @@ main{
     background-color: var(--main-bg-acent-color);
     width: 100%;
     /* default 500px */
-    height: 500px;
+    height: 550px;
     display: flex;
 }
 .work-heading{
@@ -200,8 +200,19 @@ main{
     margin: auto;
     justify-content: center;
     position: relative;
-    background-image: url("../images/kevinrhode.github.io_mod-1-challenge_\ \(1\).png");
+    
+    /* background-image: url("../images/kevinrhode.github.io_mod-1-challenge_\ \(1\).png"); */
 
+    /* max-width: 425px; */
+}
+.bottom-project-container .project .miniproject1{
+    /* background-color: var(--main-bg-color); */
+    height: 100%;
+    width: 100%;
+    
+    background-image: url("../images/kevinrhode.github.io_mod-1-challenge_\ \(1\).png");
+    opacity: 0.5;
+    background-position: -300px -705px;
     /* max-width: 425px; */
 }
 /* label styling for the project */
@@ -247,6 +258,9 @@ main{
 /* hover effect for the projects */
 .project:hover .project-backgroup{
     /* background-color: var(--work-project-hover); */
+    opacity: 0.8;
+}
+.project:hover .miniproject1{
     opacity: 0.8;
 }
 .project{
@@ -316,6 +330,12 @@ footer ul li {
 /* change font size of email at bottom */
 #email{
     font-size: 14px;
+}
+
+.avatar-Image{
+    background-color: #000;
+    height: 50px;
+    width: 50px;
 }
 
 
