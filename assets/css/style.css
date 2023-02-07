@@ -231,6 +231,17 @@ main{
     color: #ffffff;
     
 }
+
+.top-project-container #thumbnail-link {
+    position: absolute;
+    padding: 4px;
+    bottom: 6px;
+    left: -6px;
+    background-color: #000;
+    color: #ffffff;
+}
+
+
 /* to change text on porjects thumbnail top */
 .top-project-container .project pre .project-subtext{
     color:#fff;
