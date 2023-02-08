@@ -385,9 +385,16 @@ footer ul li {
 }
 
 .avatar-Image {
-    background-color: #000;
-    height: 50px;
-    width: 50px;
+
+    border: #24ccf7 5px solid;
+    border-radius: 60px;
+    /* background-color: #ff0303; */
+    background-image: url(../images/IMG_0930.jpg);
+    background-size: 235%;
+    background-position: -303px 219px;
+    height: 90px;
+    width: 100px;
+    transform: translate(3px, 11px);
 }
 
 
