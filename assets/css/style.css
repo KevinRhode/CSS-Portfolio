@@ -386,14 +386,14 @@ footer ul li {
 
 .avatar-Image {
 
-    border: #24ccf7 5px solid;
-    border-radius: 60px;
+    border: var(--main-bg-color) 5px solid;
+    border-radius: 80px;
     /* background-color: #ff0303; */
     background-image: url(../images/IMG_0930.jpg);
-    background-size: 235%;
-    background-position: -303px 219px;
-    height: 90px;
-    width: 100px;
+    background-size: 500px;
+    background-position: -201px 439px;
+    height: 125px;
+    width: 125px;
     transform: translate(3px, 11px);
 }
 
