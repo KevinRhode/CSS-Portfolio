@@ -205,12 +205,43 @@ main{
 
     /* max-width: 425px; */
 }
+/* image for refactor */
 .bottom-project-container .project .miniproject1{
     /* background-color: var(--main-bg-color); */
     height: 100%;
     width: 100%;
-    
+    background-size: 600px;
     background-image: url("../images/kevinrhode.github.io_mod-1-challenge_\ \(1\).png");
+    opacity: 0.5;
+    background-position: 0px -705px;
+    /* max-width: 425px; */
+}
+.bottom-project-container .project .miniproject2{
+    /* background-color: var(--main-bg-color); */
+    height: 100%;
+    width: 100%;
+    background-size: 600px;
+    background-image: url("../images/defaultbackdrop.jpg");
+    opacity: 0.5;
+    background-position: -300px -705px;
+    /* max-width: 425px; */
+}
+.bottom-project-container .project .miniproject3{
+    /* background-color: var(--main-bg-color); */
+    height: 100%;
+    width: 100%;
+    background-size: 600px;
+    background-image: url("../images/defaultbackdrop.jpg");
+    opacity: 0.5;
+    background-position: -300px -705px;
+    /* max-width: 425px; */
+}
+.bottom-project-container .project .miniproject4{
+    /* background-color: var(--main-bg-color); */
+    height: 100%;
+    width: 100%;
+    background-size: 600px;
+    background-image: url("../images/defaultbackdrop.jpg");
     opacity: 0.5;
     background-position: -300px -705px;
     /* max-width: 425px; */
@@ -233,10 +264,17 @@ main{
 }
 
 .top-project-container #thumbnail-link {
-    position: absolute;
+    /* position: absolute; */
+    /* inline block and tansform - safari issue with position, bottom, left */
+    display: inline-block;
+    transform: translate(-6px,-52px);
+    /* z-index: 0; */
+    /* bottom: 6px; */
+    /* left: -6px; */
+    /* -webkit-transform: translateZ(0); */
+    /* transform: translate(0px,245px); */
     padding: 4px;
-    bottom: 6px;
-    left: -6px;
+   
     background-color: #000;
     color: #ffffff;
 }
@@ -255,9 +293,12 @@ main{
 }
 /* label styling for the project */
 .bottom-project-container .project pre {
-    position: absolute;
-    bottom: -10px;
-    left: -6px;
+
+    display: inline-block;
+    transform: translate(-6px,-60px);
+    /* position: absolute; */
+    /* bottom: -10px; */
+    /* left: -6px; */
     background-color: #000;
     color: #fff;
     
@@ -339,11 +380,11 @@ footer ul li {
 
 }
 /* change font size of email at bottom */
-#email{
+#email {
     font-size: 14px;
 }
 
-.avatar-Image{
+.avatar-Image {
     background-color: #000;
     height: 50px;
     width: 50px;
@@ -413,8 +454,5 @@ footer ul li {
         justify-content: space-around;
         /* flex-basis: 0; */
     }
-
-    
-    
 
 }
