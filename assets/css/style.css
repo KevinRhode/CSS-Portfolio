@@ -233,10 +233,10 @@ main{
 }
 
 .top-project-container #thumbnail-link {
-    /* position: absolute; */
+    position: absolute;
     padding: 4px;
-    /* bottom: 6px; */
-    /* left: -6px; */
+    bottom: 6px;
+    left: -6px;
     background-color: #000;
     color: #ffffff;
 }
