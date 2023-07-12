@@ -1,4 +1,4 @@
-# mod-2-challenge
+# CSS Portfolio
 
 ## User Story
 AS AN employer
